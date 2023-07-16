@@ -86,3 +86,16 @@ describe('Basic math', () => {
 
 Execute test - npm run test:unit
 ```
+
+### V-Directives
+
+v-bind:template binding template reference to data reference directly by key/keyword
+You can shortcut this according to Vue guide by leaving out v-bind -> :href and it does the same thing.
+
+v-for loops over data items in the template
+<foo class="" v-for="item in items">
+<bar> {{ item }} (you'll get items number of bar)
+
+v-for requires unique keys:
+v-for="Item in Items"
+v-bind:key="Item"
